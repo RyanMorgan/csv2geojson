@@ -3,8 +3,8 @@ return (function(e,t,n){function i(n,s){if(!t[n]){if(!e[n]){var o=typeof require
 var dsv = require('dsv'),
     sexagesimal = require('sexagesimal');
 
-function isLat(f) { return !!f.match(/(Lat)(itude)?/gi); }
-function isLon(f) { return !!f.match(/(L)(on|ng)(gitude)?/i); }
+function isLat(f) { return !!f.match(/primary_lat?/gi); }
+function isLon(f) { return !!f.match(/primary_lng?/i); }
 
 function keyCount(o) {
     return (typeof o == 'object') ? Object.keys(o).length : 0;
